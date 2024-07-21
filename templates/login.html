@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} เข้าสู่ระบบ {% endblock %}    
+
+{% block content %}
+
+     <form action="/do-login" method="post">
+        <label for="inputUsername">ชื่อผู้ใช้</label>
+        <input type="text" id="inputUsername" name="username" required>
+        <label for="inputPassword">รหัสผ่าน : </label>
+        <input type="password" name="password" id="inputPassword">
+        <button type="submit">ลงชื่อเข้าใช้</button>
+    </form>
+
+{% endblock %}
